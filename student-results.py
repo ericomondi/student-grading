@@ -3,7 +3,7 @@ class Students():
     stud_names = []
     # stud_name = ""
 
-    def __init__(self, name = input("Enter name: ")):
+    def __init__(self, name = input("Enter name. \n")):
         self.name = name
         self.add()
     
