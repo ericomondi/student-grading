@@ -1,5 +1,21 @@
-class Grading():
+
+class Students():
+    stud_names = []
+    # stud_name = ""
+
+    def __init__(self, name = input("Enter name: ")):
+        self.name = name
+        self.add()
+    
+    
+    def add(self):
+        self.stud_names.append(self.name)
+        
+
+class Grading(Students):
+    perfomance = {}
     results = {}
+    
     def __init__(
             self,
             math = int(input("Mathematics: ")),
@@ -17,7 +33,7 @@ class Grading():
         self.find_total_marks()
         self.find_avg_marks()
         self.find_grade()
-        self.insert_dict()
+        self.insert_results()
 
     def find_total_marks(self):
         self.total = self.math + self.eng + self.kis + self.sci + self.sos
@@ -40,24 +56,21 @@ class Grading():
             self.grade = "E"
         # print(f'The grade is {self.grade}')
        
-    def insert_dict(self):
-        self.results["total"] = self.total
-        self.results["avarage_mks"] =self.avg_marks
-        self.results["grade"] = self.grade
+    def insert_results(self):
+        self.perfomance["total"] = self.total
+        self.perfomance["avarage_mks"] =self.avg_marks
+        self.perfomance["grade"] = self.grade
+        self.results[self.stud_names[0]] = self.perfomance
+        print(self.results)
+        
+        
 
-class Students(Grading):
-    stud_result = {}
+Students() 
+
+Grading()
+
     
-    def __init__(self, name = input("Enter name: ")):
-        self.name = name
-        self.identity()
 
-    def identity(self):
-        self.stud_result[self.name]= self.results
-        print(self.stud_result)
-
-Grading() 
-Students()
 
         
 
