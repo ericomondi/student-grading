@@ -18,11 +18,11 @@ class Grading():
 
     def find_total_marks(self):
         self.total = self.math + self.eng + self.kis + self.sci + self.sos
-        # print(f'The total is {self.total}')
+        
        
     def find_avg_marks(self):
         self.avg_marks = self.total / 5
-        # print(f'The avarage marks is {self.avg_marks}')
+        
        
     def find_grade(self):
         if self.avg_marks > 79:
@@ -35,14 +35,14 @@ class Grading():
             self.grade = "D"
         else:
             self.grade = "E"
-        # print(f'The grade is {self.grade}')
+        
 
     def insert_results(self):
         self.perfomance["total"] = self.total
         self.perfomance["avarage_mks"] =self.avg_marks
         self.perfomance["grade"] = self.grade
         self.perfomance_out[name] = self.perfomance
-        # print(self.perfomance_out)
+       
 
 
 results = {}
@@ -74,7 +74,3 @@ print(s.perfomance_out)
 
 
     
-
-
-
-
