@@ -6,5 +6,5 @@ It then takes the score per subject. The output will
 then contain the students' names, scores, and performance.
 
 
-![readme](https://github.com/ericomondi/student-grading/assets/139236060/2cad4580-bfb7-4ab9-a617-d872a9d65cc5)![gradingReadme](https://github.com/ericomondi/student-grading/assets/139236060/07de73f7-7fd9-47bf-9deb-09523288fce6)
+![gradingReadme](https://github.com/ericomondi/student-grading/assets/139236060/07de73f7-7fd9-47bf-9deb-09523288fce6)
 
