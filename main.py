@@ -46,6 +46,8 @@ class Grading():
 
 
 results = {}
+subject = {}
+subject_out = {}
 for i in range(0,int(input("Enter no of students: "))):
     name = input("Enter name \n")
     marks = [int(input("Mathematics: ")),
@@ -56,7 +58,13 @@ for i in range(0,int(input("Enter no of students: "))):
     results[name] = marks
     Grading(*results[name])
     s = Grading
-print(results)
+    subject["maths"] = marks[0]
+    subject["eng"] = marks[1]
+    subject["kis"] = marks[2]
+    subject["sci"] = marks[3]
+    subject["sos"] = marks[4]
+    subject_out[name] = subject
+print(subject_out)
 print(s.perfomance_out)
 
 
