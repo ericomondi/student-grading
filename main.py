@@ -58,9 +58,11 @@ for i in range(1,int(input("Enter no of students: "))+ 1):
         int(input("Science: ")),
         int(input("Social Studies: "))]
     results.append(inputs)
-    Grading(*inputs) 
-    s = Grading
+
+for list in results:
+    s = Grading(*list)
     perfomance_out.append(s.perfomance)
+    
 
 print(results)
 print(perfomance_out)   
