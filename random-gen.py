@@ -1,7 +1,7 @@
-        
+import random
+
+
 class Grading():
-    # perfomance = {}
-   
     
     def __init__(self,name,math,eng ,kis ,sci ,sos ):
         self.name = name
@@ -10,7 +10,7 @@ class Grading():
         self.kis = kis
         self.sci = sci
         self.sos = sos
-        self.perfomance = {}
+        self.performance = {} # This is specific to each instance
         self.find_total_marks()
         self.find_avg_marks()
         self.find_grade()
@@ -41,44 +41,25 @@ class Grading():
        
 
     def insert_results(self):
-        self.perfomance["name"] = self.name
-        self.perfomance["total"] = self.total
-        self.perfomance["avarage_mks"] =self.avg_marks
-        self.perfomance["grade"] = self.grade
-        
-       
+        self.performance["name"] = self.name
+        self.performance["total"] = self.total
+        self.performance["avarage_mks"] =self.avg_marks
+        self.performance["grade"] = self.grade
+
 results = []
-perfomance_out = []
-
-for i in range(1,int(input("Enter no of students: "))+ 1):
-    
-    inputs = [input("Enter name \n"),
-        int(input("Mathematics: ")),
-        int(input("English: ")),
-        int(input("Kiswahili: ")),
-        int(input("Science: ")),
-        int(input("Social Studies: "))]
-    results.append(inputs)
-
-for list in results:
-    s = Grading(*list)
-    perfomance_out.append(s.perfomance)
-    
-
-print(results)
-print(perfomance_out)   
+performance_out = []
+student_names = ['Student A', 'Student B', 'Student C']
+student_marks = [[random.randint(1, 100) for x in range(1,6)] for _ in range(len(student_names))]
 
 
+for name, marks in zip(student_names, student_marks):
+    results.append([name, *marks]) 
+    s = Grading(*[name, *marks])
+    print(s.performance)
+    performance_out.append(s.performance)
 
+for result in results:
+    print(result)
 
-    
-
-
-        
-       
-    
-
-
-
-
-    
+for performance in performance_out:
+    print(performance) 
