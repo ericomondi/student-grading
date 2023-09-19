@@ -10,6 +10,7 @@ class Grading():
         self.kis = kis
         self.sci = sci
         self.sos = sos
+        self.subject = {}
         self.perfomance = {}
         self.find_total_marks()
         self.find_avg_marks()
@@ -45,10 +46,18 @@ class Grading():
         self.perfomance["total"] = self.total
         self.perfomance["avarage_mks"] =self.avg_marks
         self.perfomance["grade"] = self.grade
+
+        self.subject["name"] = self.name
+        self.subject["maths"] = self.math
+        self.subject["english"] = self.eng
+        self.subject["kiswahili"] = self.kis
+        self.subject["science"] = self.sci
+        self.subject["sosial-studies"] = self.sos
         
        
 results = []
 perfomance_out = []
+subject_out = []
 
 for i in range(1,int(input("Enter no of students: "))+ 1):
     
@@ -60,12 +69,14 @@ for i in range(1,int(input("Enter no of students: "))+ 1):
         int(input("Social Studies: "))]
     results.append(inputs)
 
-for list in results:
-    s = Grading(*list)
+for result in results:
+    s = Grading(*result)
     perfomance_out.append(s.perfomance)
+    subject_out.append(s.subject)
+
     
 
-print(results)
+print(subject_out)
 print(perfomance_out)   
 
 

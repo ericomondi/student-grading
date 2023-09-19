@@ -1,5 +1,5 @@
 #  the program prompts the user to enter the no of students, name
-# and score per subject then outputs a dictionary with the students
+# and score per-subject then outputs a dictionary with the students
 #  names as the key and the scores per subject as a the key-value in a list 
 
 results = {}

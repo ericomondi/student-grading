@@ -1,4 +1,4 @@
-# 1. Create students score dictionary.
+# 1. Create students score dictionary
 students_score = {}
 
 # 2. Input student's name and check if input is correct. (Alphabet, period, and blank only.)

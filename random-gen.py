@@ -10,7 +10,7 @@ class Grading():
         self.kis = kis
         self.sci = sci
         self.sos = sos
-        self.performance = {} # This is specific to each instance
+        self.performance = {} # This is specific to each instance.
         self.find_total_marks()
         self.find_avg_marks()
         self.find_grade()

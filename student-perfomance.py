@@ -1,5 +1,6 @@
 # the program promts you to enter a students name and score per subject
-# then outputs a dictionary containing the name as the key and (total, avarage marks, and grade)
+# then outputs a dictionary containing the name as the key and 
+# (total, avarage marks, and grade)
 # as key values in a dictionary
 
 class Students():
