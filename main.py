@@ -47,8 +47,8 @@ class Grading():
         self.subject["english"] = self.eng
         self.subject["kiswahili"] = self.kis
         self.subject["science"] = self.sci
-        self.subject["sosial-studies"] = self.sos
-        
+        self.subject["social-studies"] = self.sos
+
         self.perfomance["name"] = self.name
         self.perfomance["total"] = self.total
         self.perfomance["avarage_mks"] =self.avg_marks
