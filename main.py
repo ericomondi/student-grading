@@ -42,17 +42,19 @@ class Grading():
        
 
     def insert_results(self):
-        self.perfomance["name"] = self.name
-        self.perfomance["total"] = self.total
-        self.perfomance["avarage_mks"] =self.avg_marks
-        self.perfomance["grade"] = self.grade
-
         self.subject["name"] = self.name
         self.subject["maths"] = self.math
         self.subject["english"] = self.eng
         self.subject["kiswahili"] = self.kis
         self.subject["science"] = self.sci
         self.subject["sosial-studies"] = self.sos
+        
+        self.perfomance["name"] = self.name
+        self.perfomance["total"] = self.total
+        self.perfomance["avarage_mks"] =self.avg_marks
+        self.perfomance["grade"] = self.grade
+
+        
         
        
 results = []
@@ -71,8 +73,8 @@ for i in range(1,int(input("Enter no of students: "))+ 1):
 
 for result in results:
     s = Grading(*result)
-    perfomance_out.append(s.perfomance)
     subject_out.append(s.subject)
+    perfomance_out.append(s.perfomance)
 
     
 
