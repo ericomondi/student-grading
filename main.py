@@ -1,8 +1,6 @@
         
 class Grading():
-    # perfomance = {}
-   
-    
+        
     def __init__(self,name,math,eng ,kis ,sci ,sos ):
         self.name = name
         self.math = math
@@ -27,7 +25,6 @@ class Grading():
         self.avg_marks = self.total / 5
         
         
-       
     def find_grade(self):
         if self.avg_marks > 79:
             self.grade = "A"
@@ -52,10 +49,7 @@ class Grading():
         self.perfomance["name"] = self.name
         self.perfomance["total"] = self.total
         self.perfomance["avarage_mks"] =self.avg_marks
-        self.perfomance["grade"] = self.grade
-
-        
-        
+        self.perfomance["grade"] = self.grade  
        
 results = []
 perfomance_out = []
@@ -76,7 +70,6 @@ for result in results:
     subject_out.append(s.subject)
     perfomance_out.append(s.perfomance)
 
-    
 
 print(subject_out)
 print(perfomance_out)   
