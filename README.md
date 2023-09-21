@@ -1,10 +1,7 @@
 # student-grading
 
-The program takes the number of students in the class
-and then prompts the user to enter a student's name. 
-It then takes the score per subject. The output will 
-then contain the students' names, scores, and performance.
+This code is a basic student grading system that takes input data for multiple students, calculates their grades and performance details, and stores the information in dictionaries. It's a simple example of object-oriented programming and data processing in Python.
 
+![Uploading Capture.JPG…]()
 
-![gradingReadme](https://github.com/ericomondi/student-grading/assets/139236060/07de73f7-7fd9-47bf-9deb-09523288fce6)
 
